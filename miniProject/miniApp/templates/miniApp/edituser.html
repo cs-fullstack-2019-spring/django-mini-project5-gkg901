@@ -1,0 +1,14 @@
+{% extends 'miniApp/base.html' %}
+
+
+{% block content %}
+
+<h1>Edit Profile</h1>
+
+<form  method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Submit</button>
+</form>
+
+{% endblock %}

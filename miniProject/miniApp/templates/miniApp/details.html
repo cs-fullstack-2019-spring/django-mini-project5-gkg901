@@ -1,0 +1,21 @@
+{% extends 'miniApp/base.html' %}
+
+{% load static %}
+
+
+
+{% block content %}
+
+    <div class="card" style="width: 18rem;">
+        <img src="{{recipe.pictureURL}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">{{recipe.name}}</p>
+            <p class="card-text">{{recipe.description}}</p>
+            <p class="card-text">{{recipe.ingredients}}</p>
+            <p class="card-text">{{recipe.directions}}</p>
+            <p class="card-text">{{recipe.creator}}</p>
+            <p class="card-text">{{recipe.created}}</p>
+        </div>
+    </div>
+
+{% endblock content %}}

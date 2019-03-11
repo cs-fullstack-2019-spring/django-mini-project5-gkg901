@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="../../static/miniApp/css/bootstrap.css">
+
+</head>
+<body>
+
+<nav>
+
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'allrecipes' %}">All Recipes</a>
+    <a href="{% url 'newrecipe' %}">New Recipe</a>
+    <a href="{% url 'profile' %}">Profile</a>
+
+</nav>
+
+{% block content %}
+{% endblock content %}
+
+
+</body>
+</html>

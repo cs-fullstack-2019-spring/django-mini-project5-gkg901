@@ -1,0 +1,26 @@
+{% extends 'miniApp/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+{% if request.user.is_authenticated %}
+
+<h1>Create Recipe</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>Submit</button>
+</form>
+
+<a href="{% url 'index' %}">Back to Home</a>
+
+{% else %}
+
+<a href="{% url 'index' %}">Log In</a>
+
+{% endif %}
+
+{% endblock content %}
