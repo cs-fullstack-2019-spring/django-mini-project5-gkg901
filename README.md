@@ -34,3 +34,5 @@ The profile page should allow you to edit the logged in users:
 
 ## Challenge
 Include a delete button
+<hr>
+0 points. The site never worked. There's no interal log in page and the default django one is not loaded.
